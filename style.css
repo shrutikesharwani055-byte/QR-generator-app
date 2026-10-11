@@ -1,0 +1,81 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(90, 85, 85);
+}
+
+.container{
+    max-width:90%;
+     width:400px;
+    background-color:white;
+    margin-top:200px;
+    margin-left:500px;
+    border-radius:5px;
+    align-items: center;
+    padding:20px;
+}
+
+.text{
+    width:350px;
+    height:40px;
+    margin:20px 5px 20px 5px;
+    padding-left:7px;
+    border-radius:2px;
+}
+
+#imagebox{
+    max-height:300px;
+    width:200px;
+    border-radius:5px;
+    overflow:hidden;
+    transition:max-height 1s;
+}
+
+#imagebox img{
+width:100%;
+padding:10px;
+}
+
+#imagebox.show-img{
+    max-width:300px;
+    margin:10px auto;
+    border:1px solid #d1d1d1;
+}
+
+.generate-QR{
+    width:300px;
+    height:40px;
+    border-radius:5px;
+    background-color: rgb(64, 64, 206);
+    color: aliceblue;
+    margin:20px 50px 20px 35px;
+    cursor:pointer;
+    border:none;
+}
+
+.error{
+    animation:shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform  :translateX(0);
+    }
+    25%{
+        transform  :translateX(-2px);
+    }
+    50%{
+        transform  :translateX(0);
+    }
+    75%{
+        transform :translateX(2px);
+    }
+    100%{
+        transform  :translateX(0);
+    }
+}
+
+
